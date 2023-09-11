@@ -1,4 +1,5 @@
 import styles from './ToDoList.module.css'
+import Tarefas from './../Tarefas'
 
 function ToDoList(){
     return(
@@ -6,8 +7,9 @@ function ToDoList(){
             <h1>Lista de Tarefas</h1>
             <div className={styles.inputButton}>
             <input type="text" placeholder="Adicionar Tarefa"/>
-            <button>Adicionar</button>
+            <button className={styles.buttonAdicionar}>Adicionar</button>
             </div>
+            <Tarefas/>
 
         </div>
 

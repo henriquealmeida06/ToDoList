@@ -19,6 +19,7 @@ h1{
 }
 .inputButton{
     margin-top: 20px;
+
 }
 .inputButton input{
     background-color: transparent;
@@ -32,11 +33,17 @@ h1{
 .inputButton input::placeholder{
     color: white;
 }
-.inputButton button{
+.buttonAdicionar{
     border: none;
     background-color: #3b99eb;
     color: white;
     padding: 12px 15px 12px 15px;
     border-radius: 3px;
     margin-left: 6px;
+    cursor: pointer;
+}
+.buttonAdicionar:hover{
+    background-color: #256aa7;
+    transition: background-color 0.2s;
+    
 }
