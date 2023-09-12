@@ -8,6 +8,7 @@
     min-width: 50vh;
     background: linear-gradient(45deg, #3b99eb, #348cda);
     border-radius: 3px;
+    margin-bottom: 50px;
     
     
 }
@@ -44,4 +45,8 @@
     align-items: center;
     width: 100%;
     
+}
+.espaco{
+    margin-top: 5px;
+    border-top: 2px solid black;
 }

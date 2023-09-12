@@ -6,13 +6,20 @@ function ToDoList(){
 
     const [lista, setLista] = useState([])
     const [novaTarefa, setNovaTarefa] = useState ('')  
-    const [vazio, setvazio] = useState('')
+    const [preenchido, setpreenchido] = useState('')
 
     function adicionarTarefa(){
+        if(novaTarefa.trim() !=='')
         setLista([...lista, novaTarefa])
         setNovaTarefa('')
-        setvazio('ok')
+        setpreenchido('ok')
+       
     }  
+    function excluirTarefa(index){
+        const novaLista = lista.filter((_, i)=> i !== index);
+        setLista(novaLista)
+
+    }
 
 
     return(
@@ -22,8 +29,8 @@ function ToDoList(){
             <input type="text" placeholder="Adicionar Tarefa" value={novaTarefa} onChange={(e)=>setNovaTarefa(e.target.value)}/>
             <button className={styles.buttonAdicionar} onClick={adicionarTarefa}>Adicionar</button>
             </div>
-            { vazio ?
-            <Tarefas lista={lista}/>
+            { preenchido ?
+            <Tarefas lista={lista} onExcluir={excluirTarefa}/>
         : null}
             
         
