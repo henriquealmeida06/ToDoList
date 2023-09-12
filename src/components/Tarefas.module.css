@@ -43,10 +43,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: #3b99eb;
+    min-width: 50vh;
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: 10px;
     
-}
-.espaco{
-    margin-top: 5px;
-    border-top: 2px solid black;
 }

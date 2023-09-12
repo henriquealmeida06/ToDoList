@@ -16,9 +16,9 @@ function ToDoList(){
        
     }  
     function excluirTarefa(index){
-        const novaLista = lista.filter((_, i)=> i !== index);
+        const novaLista = [...lista]
+        novaLista.splice(index, 1);
         setLista(novaLista)
-
     }
 
 

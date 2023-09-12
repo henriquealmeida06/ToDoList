@@ -9,7 +9,7 @@ function Tarefas({lista, onExcluir}){
         
             
       
-        <div className={styles.containerTarefa}>
+        <div>
             {lista.map((item, index)=>(
                 <item className={styles.itensContainer}>{item}
                <div className={styles.buttonsContainer}>
@@ -19,7 +19,7 @@ function Tarefas({lista, onExcluir}){
                
                 </item>
             ))}
-            <div className={styles.espaco}></div>
+            
             
      </div>
      
