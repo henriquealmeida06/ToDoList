@@ -1,33 +1,47 @@
 .containerTarefa{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     padding: 8px;
     margin-top: 25px;
     min-width: 50vh;
     background: linear-gradient(45deg, #3b99eb, #348cda);
     border-radius: 3px;
     
+    
 }
 .buttonsContainer{
     background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: end;
+    
+    
  
-   
+
    
 }
 .buttonTarefas{
-    background-color: transparent;
     border: none;
+    background-color: transparent;
     color: white;
     font-size: 20px;
-    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    padding: 2px;
+    border-radius: 4px;
 }
+
 .buttonTarefas:hover{
-    color: rgb(114, 15, 153);
+    background-color: #256aa7;
+}
+.itensContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
 }
