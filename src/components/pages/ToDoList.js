@@ -7,6 +7,7 @@ function ToDoList(){
     const [lista, setLista] = useState([])
     const [novaTarefa, setNovaTarefa] = useState ('')  
     const [preenchido, setpreenchido] = useState('')
+    const [editandoItem, setEditandoItem] = useState('')
 
     function adicionarTarefa(){
         if(novaTarefa.trim() !=='')
@@ -21,6 +22,20 @@ function ToDoList(){
         setLista(novaLista)
     }
 
+    function editarItem(index){
+        setEditandoItem(index)
+        setNovaTarefa(lista[index])
+    }
+    function concluirEdicao(index){
+        const novaLista = [...lista]
+        novaLista[index] = novaTarefa;
+        setLista(novaLista);
+        setEditandoItem(null)
+        setNovaTarefa('')
+    }
+
+    
+
 
     return(
         <div className={styles.container}>
@@ -30,7 +45,7 @@ function ToDoList(){
             <button className={styles.buttonAdicionar} onClick={adicionarTarefa}>Adicionar</button>
             </div>
             { preenchido ?
-            <Tarefas lista={lista} onExcluir={excluirTarefa}/>
+            <Tarefas lista={lista} onExcluir={excluirTarefa} editando={editandoItem} novaTarefa={novaTarefa} concluirEdicao={concluirEdicao} editarItem={editarItem} setNovaTarefa={setNovaTarefa}/>
         : null}
             
         
