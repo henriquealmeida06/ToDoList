@@ -11,6 +11,7 @@
     min-width: 53vh;
     font-family: 'Roboto', sans-serif;
     box-shadow: 3px 4px 5px black;
+    overflow: auto;
 
 }
 h1{

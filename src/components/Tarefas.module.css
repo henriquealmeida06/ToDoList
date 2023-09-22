@@ -11,6 +11,12 @@
     margin-bottom: 50px;
     
     
+    
+}
+.containerTotal{
+    overflow-y: auto;
+    margin-top: 4px;
+    max-height: 65vh;
 }
 .buttonsContainer{
     background-color: transparent;
@@ -50,6 +56,20 @@
     margin-top: 10px;
     
 }
+.itensMarcados{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #11974d;
+        min-width: 50vh;
+        border-radius: 3px;
+        padding: 8px;
+        margin-top: 10px;
+        
+    }
+
+
 .inputEdicao{
     background-color: #5c2481;
     color: white;
