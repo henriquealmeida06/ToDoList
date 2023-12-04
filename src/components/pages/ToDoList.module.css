@@ -7,14 +7,15 @@
     padding: 12px 18px 12px 18px;
     background-color: rgb(55, 22, 78, 0.7);
     color: white;
-    min-height: 65vh;
-    min-width: 53vh;
+    min-height: 70vh;
+    max-width: 70vh;
+    min-width: 58vh;
     font-family: 'Roboto', sans-serif;
     box-shadow: 3px 4px 5px black;
-    overflow: auto;
+    overflow-x: hidden;
 
 }
-h1{
+h1s{
     font-size: 20px;
     margin-top: 15px;
 }
@@ -31,10 +32,10 @@ h1{
     outline: none;
     color: white;
 }
-.inputButton input::placeholder{
+.inputButton input::placeholders{
     color: rgb(184, 183, 183);
 }
-.buttonAdicionar{
+.buttonAdicionars{
     border: none;
     background-color: #3b99eb;
     color: white;
